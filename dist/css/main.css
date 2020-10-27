@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+  padding-top: 1.3rem;
+  max-width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  color: #ff5757;
+}
+
+nav .menu a {
+  color: #fff;
+  display: inline-block;
+  padding: 7px 10px;
+  position: relative;
+}
+
+nav .menu a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav .menu a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.section .indent {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.home {
+  position: relative;
+}
+
+.home .logo {
+  font-size: 3rem;
+  font-family: 'Londrina Outline', cursive;
+}
+
+.home .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-top: 20vh;
+  color: white;
+}
+
+.home .center .center-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 11.5rem);
+          flex: 1 0 calc(50% - 11.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 1.5rem;
+}
+
+.home .center .center-img img {
+  -webkit-filter: drop-shadow(2px 4px 6px black) contrast(1.1);
+          filter: drop-shadow(2px 4px 6px black) contrast(1.1);
+  border-radius: 50%;
+}
+
+.home .center .center-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 1rem);
+          flex: 1 0 calc(50% - 1rem);
+}
+
+.home .center #element {
+  color: gray;
+}
+
+.home .page-num {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  color: white;
+  font-family: 'Titan One', cursive;
+}
+
+.home .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.home .social .home-git {
+  color: #d3d3d3;
+}
+
+.home .social .home-ln {
+  color: #2867b2;
+}
+
+.home .social a {
+  margin-right: 1.5rem;
+  font-size: 1.7rem;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.home .social a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  opacity: 0.5;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #ff5757;
+}
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  color: #ff5757;
+}
+
+.profile {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.profile .page-num {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  color: #ff5757;
+  font-family: 'Titan One', cursive;
+}
+
+.profile .profile-indent {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.profile .title {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 3rem;
+}
+
+.profile .profile-wrap {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .profile-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 1rem);
+          flex: 1 0 calc(50% - 1rem);
+  margin-right: 2.5rem;
+}
+
+.profile .profile-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 1rem);
+          flex: 1 0 calc(50% - 1rem);
+}
+
+.profile .company {
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 4px 3px 9px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 9px -4px rgba(0, 0, 0, 0.75);
+}
+
+.profile .company .company-right {
+  margin-left: 1.2rem;
+}
+/*# sourceMappingURL=main.css.map */
